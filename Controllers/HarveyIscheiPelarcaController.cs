@@ -5,7 +5,7 @@ namespace IT_ELECTIVE_FINAL_EXAM_BSIT_31E3.Controllers
 {
     // Harvey Ischei Pelarca's portfolio merged into the final exam project.
     // This controller uses the final exam project's existing portfolio design.
-    [Classmate("Pelarca Harvey Ischei")]
+    [Classmate("Pelarca, Harvey Ischei")]
     public class HarveyIscheiPelarcaController : Controller
     {
         public IActionResult Index()
