@@ -1,4 +1,4 @@
-﻿@model IT_ELECTIVE_FINAL_EXAM_BSIT_31E3.Models.ClassmateProfile
+@model IT_ELECTIVE_FINAL_EXAM_BSIT_31E3.Models.ClassmateProfile
 @{
     ViewData["Title"] = Model.FullName;
 }
@@ -48,6 +48,10 @@
         {
             <div class="col-md-6 mb-3">
                 <div class="card h-100 shadow-sm">
+                    @if (!string.IsNullOrWhiteSpace(p.ImagePath))
+                    {
+                        <img src="@Url.Content(p.ImagePath)" alt="Screenshot of @p.Title" class="card-img-top" style="height:220px;object-fit:cover;" />
+                    }
                     <div class="card-body">
                         <span class="badge bg-info text-dark mb-2">@p.Stage</span>
                         <h5 class="card-title">@p.Title</h5>
