@@ -1,7 +1,7 @@
-﻿using IT_ELECTIVE_FINAL_EXAM_BSIT_31A1.Models;
+﻿using IT_ELECTIVE_FINAL_EXAM_BSIT_31E3.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace IT_ELECTIVE_FINAL_EXAM_BSIT_31A1.Controllers
+namespace IT_ELECTIVE_FINAL_EXAM_BSIT_31E3.Controllers
 {
     [Classmate("Canua, Carl James P.")]   // shown on the Home list; sorted by surname
     public class CanuaCarlJamesController : Controller
