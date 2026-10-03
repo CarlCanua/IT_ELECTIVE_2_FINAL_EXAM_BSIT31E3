@@ -1,0 +1,46 @@
+@model List<IT_ELECTIVE_FINAL_EXAM_BSIT_31E3.Models.ClassmateListItem>
+@{
+    ViewData["Title"] = "BSIT 31E3 Portfolio";
+}
+
+@* 
+    BASE HOME PAGE FOR BSIT 31E3.
+
+    Add each student's controller under Controllers/.
+    Example:
+        [Classmate("Juan Dela Cruz")]
+        public class JuanDelaCruzController : Controller
+
+    The student will automatically appear in this list.
+*@
+
+<div class="text-center mb-5">
+    <h1 class="display-5 fw-bold">BSIT 31E3 Portfolio</h1>
+    <p class="lead">IT Elective Final Exam — Class Portfolio</p>
+</div>
+
+@if (Model.Count == 0)
+{
+    <div class="alert alert-info">
+        No student portfolios have been added yet.
+        Add a controller using <code>[Classmate("Student Name")]</code> to display it here.
+    </div>
+}
+else
+{
+    <div class="row g-4">
+        @foreach (var classmate in Model)
+        {
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h2 class="h5 card-title">@classmate.Name</h2>
+                        <a class="btn btn-dark" asp-controller="@classmate.ControllerName" asp-action="Index">
+                            View Portfolio
+                        </a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
