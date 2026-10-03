@@ -8,5 +8,7 @@
         public string? LiveUrl { get; set; }
         public string Description { get; set; } = "";
         public List<string> TechStack { get; set; } = new();
+        // Optional screenshot used by portfolios that have project images.
+        public string? ImagePath { get; set; }
     }
 }
