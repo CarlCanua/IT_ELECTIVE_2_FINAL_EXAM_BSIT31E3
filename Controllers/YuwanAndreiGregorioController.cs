@@ -5,7 +5,7 @@ namespace IT_ELECTIVE_FINAL_EXAM_BSIT_31E3.Controllers
 {
     // This is Yuwan Andrei Gregorio's portfolio merged into the FINAL EXAM structure.
     // The controller intentionally uses the final-exam project's existing models.
-    [Classmate("Yuwan Andrei Gregorio")]
+    [Classmate("Gregorio, Yuwan Andrei ")]
     public class YuwanAndreiGregorioController : Controller
     {
         public IActionResult Index()
