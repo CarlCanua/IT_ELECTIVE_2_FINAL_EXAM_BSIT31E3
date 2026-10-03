@@ -25,3 +25,15 @@ dotnet run
 ```
 
 The project targets .NET 10 (`net10.0`).
+
+## Merged Student Portfolio: Yuwan Andrei Gregorio
+
+Yuwan Andrei Gregorio's IT Elective 2 portfolio has been merged into this final-exam project.
+
+- Controller: `Controllers/YuwanAndreiGregorioController.cs`
+- View: `Views/YuwanAndreiGregorio/Index.cshtml`
+- GitHub: `https://github.com/yuwanandrei`
+- Project screenshots: `wwwroot/images/projects/`
+- Section: `BSIT 31E3`
+
+The original `GregorioPortfolio` project structure was not copied into this application. Its project data and screenshots were adapted to the existing final-exam `ClassmateProfile` / `ProjectItem` structure.
